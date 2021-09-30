@@ -9,15 +9,15 @@ jobs:
     timeout-minutes: 9999
 
     steps:
-    - name: Mendownload Ngrok.
+    - name: Mendownloadyahaha.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/logcitra/LOGRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/logcitra/LOGRDP/main/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/logcitra/LOGRDP/main/wallpaper.bat -OutFile wallpaper.bat
-    - name: Extracting Ngrok.
+        Invoke-WebRequest https://raw.githubusercontent.com/Faris0520/_-kj/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Faris0520/_-kj/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/Faris0520/_-kj/main/wallpaper.bat -OutFile wallpaper.bat
+    - name: Extractingtitid.
       run: Expand-Archive ngrok.zip
-    - name: Connecting Ngrok.
+    - name: Connectingdsad.
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
@@ -34,5 +34,5 @@ jobs:
       run: cmd /c start.bat
     - name: Sucess! Anda Bisa Tutup Tabnya sekarang.
       run: | 
-        Invoke-WebRequest https://github.com/logcitra/LOGRDP/raw/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://github.com/Faris0520/_-kj/raw/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
